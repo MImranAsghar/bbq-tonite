@@ -15,6 +15,11 @@ class CustomerDashboard extends Component {
   // profileHandler = () => {
   //   this.props.history.push("/you");
   // };
+    constructor(props) {
+  super(props);
+  // N’appelez pas `this.setState()` ici !
+  this.logoutHandler =  this.logoutHandler.bind(this);;
+}
 
   logoutHandler = e => {
     console.log(e);
